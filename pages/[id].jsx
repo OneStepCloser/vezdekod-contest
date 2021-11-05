@@ -173,7 +173,7 @@ export default function Contest(props) {
         }
 
         return contestsLayers[layer + 1].some(contest => contest.player1 === playerId || contest.player2 === playerId);
-    }, [contestsLayers]);
+    }, [contestsLayers, winnerId]);
 
     useEffect(() => {
         setWinnerId(null);
