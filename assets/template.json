@@ -1,0 +1,92 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Команда 1",
+      "rating": 0
+    },
+    {
+      "id": 2,
+      "name": "Команда 2",
+      "rating": 0
+    },
+    {
+      "id": 3,
+      "name": "Команда 3",
+      "rating": 0
+    },
+    {
+      "id": 4,
+      "name": "Команда 4",
+      "rating": 0
+    },
+    {
+      "id": 5,
+      "name": "Команда 5",
+      "rating": 0
+    },
+    {
+      "id": 6,
+      "name": "Команда 6",
+      "rating": 0
+    },
+    {
+      "id": 7,
+      "name": "Команда 7",
+      "rating": 0
+    },
+    {
+      "id": 8,
+      "name": "Команда 8",
+      "rating": 0
+    }
+  ],
+  "contests": {
+    "items": [
+      {
+        "id": 1,
+        "player1": null,
+        "player2": null
+      },
+      {
+        "id": 2,
+        "player1": null,
+        "player2": null
+      },
+      {
+        "id": 3,
+        "player1": null,
+        "player2": null
+      },
+      {
+        "id": 4,
+        "player1": null,
+        "player2": null
+      }
+    ],
+    "children": {
+      "items": [
+        {
+          "id": 5,
+          "player1": null,
+          "player2": null
+        },
+        {
+          "id": 6,
+          "player1": null,
+          "player2": null
+        }
+      ],
+      "children": {
+        "items": [
+          {
+            "id": 7,
+            "player1": null,
+            "player2": null
+          }
+        ]
+      }
+    }
+  },
+  "winner": null
+}

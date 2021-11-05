@@ -1,0 +1,268 @@
+.contest-page {
+    padding-bottom: 64px;
+}
+
+.header {
+    background-image: linear-gradient(to right, rgba(28, 54, 56, 0) 0%, rgba(28, 54, 56, 1) 10%, rgba(28, 54, 56, 1) 25%, rgba(28, 54, 56, 0) 40%, rgba(28, 54, 56, 0) 100%), url('../assets/vezdekod-bg.jpeg');
+    background-size: auto, auto 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content {
+    padding: 16px 0;
+    flex-grow: 1;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.contests {
+    display: flex;
+    padding: 16px 10%;
+}
+
+.players {
+    display: flex;
+    padding: 16px 10%;
+    border-bottom: 1px solid #cccccc;
+}
+
+.players-list {
+    width: 30%;
+}
+
+.editor {
+    width: 70%;
+    margin-left: 24px;
+}
+
+.player-input {
+    display: none;
+}
+
+.player-input:checked + .player-input-label {
+    background-color: rgba(2, 132, 255, 0.3);
+}
+
+.player-input-label {
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.name-input {
+    border-bottom: 1px solid #cccccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding: 8px;
+    font-size: 1.1rem;
+}
+
+.name-input:focus {
+    border-bottom-color: rgb(2, 132, 255);
+}
+
+.winner-layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.winner-layer .player-wrapper {
+    border-color: #FFB702;
+    font-weight: bold;
+    background-color: rgba(255, 183, 2, 0.1);
+}
+
+.crown-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/crown.svg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #FFB702;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: white;
+}
+
+.players-pair {
+    display: flex;
+}
+
+.players-pair-container {
+    flex-grow: 1;
+}
+
+.branches {
+    display: flex;
+}
+
+.branches-horizontal {
+    width: 16px;
+    position: relative;
+}
+
+.branches-horizontal::before,
+.branches-horizontal::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(2, 132, 255);
+    position: absolute;
+}
+
+.branches-horizontal::before {
+    top: 36px;
+    transform: translateY(-50%);
+}
+
+.branches-horizontal::after {
+    bottom: 36px;
+    transform: translateY(50%);
+}
+
+.branch-vertical {
+    height: calc(100% - 72px + 2px);
+    background-color: rgb(2, 132, 255);
+    width: 2px;
+    position: relative;
+    top: calc(36px - 1px);
+}
+
+.branch-middle {
+    width: 16px;
+    position: relative;
+}
+
+.branch-middle:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(2, 132, 255);
+}
+
+.player {
+    padding: 8px 0;
+    height: 72px;
+    min-width: 200px;
+}
+
+.player-wrapper {
+    border: 1px solid #0284FF;
+    border-radius: 16px;
+    height: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.player-winner-radio-input {
+    display: none;
+}
+
+.player-winner-radio-button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+.player-winner-radio-input:checked + .player-winner-radio-button {
+    border-color: rgb(2, 132, 255);
+}
+
+.player-winner-radio-input:checked + .player-winner-radio-button:after {
+    opacity: 1;
+}
+
+.player-winner-radio-button:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/trophy.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.player-winner-radio-input:disabled + .player-winner-radio-button {
+    cursor: not-allowed;
+}
+
+.player-winner-radio-input:not(:disabled) + .player-winner-radio-button:hover {
+    border-color: rgba(2, 132, 255, 0.3);
+}
+
+.player-winner-radio-input:not(:disabled) + .player-winner-radio-button:hover:after {
+    opacity: 0.2;
+}
+
+.buttons {
+    padding: 16px 10%;
+}
+
+.save-button {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: rgb(2, 132, 255);
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: rgb(39, 149, 255);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 50%;
+    margin-right: 12px;
+    animation: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 2px;
+}
+
+
