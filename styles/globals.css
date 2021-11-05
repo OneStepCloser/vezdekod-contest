@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+*[class*="-control"][class*="css-"] {
+  border-color: transparent !important;
+  box-shadow: none;
+}
+
+*[class*="-container"][class*="css-"] {
+  flex-grow: 1;
+}
+
+*[class*="-ValueContainer"][class*="css-"] {
+  padding-left: 0;
+  padding-right: 0;
+}

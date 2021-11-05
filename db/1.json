@@ -1,0 +1,92 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Mountain Heads",
+      "rating": 611
+    },
+    {
+      "id": 2,
+      "name": "[LIFE] Laboratory",
+      "rating": 392
+    },
+    {
+      "id": 3,
+      "name": "Без булдырабыз",
+      "rating": 387
+    },
+    {
+      "id": 4,
+      "name": "Yeah, Bash!",
+      "rating": 376
+    },
+    {
+      "id": 5,
+      "name": "Абчихба",
+      "rating": 374
+    },
+    {
+      "id": 6,
+      "name": "IT Band",
+      "rating": 319
+    },
+    {
+      "id": 7,
+      "name": "Рыбов",
+      "rating": 254
+    },
+    {
+      "id": 8,
+      "name": "Команда X",
+      "rating": 203
+    }
+  ],
+  "contests": {
+    "items": [
+      {
+        "id": 1,
+        "player1": null,
+        "player2": null
+      },
+      {
+        "id": 2,
+        "player1": null,
+        "player2": null
+      },
+      {
+        "id": 3,
+        "player1": null,
+        "player2": null
+      },
+      {
+        "id": 4,
+        "player1": null,
+        "player2": null
+      }
+    ],
+    "children": {
+      "items": [
+        {
+          "id": 5,
+          "player1": null,
+          "player2": null
+        },
+        {
+          "id": 6,
+          "player1": null,
+          "player2": null
+        }
+      ],
+      "children": {
+        "items": [
+          {
+            "id": 7,
+            "player1": null,
+            "player2": null
+          }
+        ]
+      }
+    }
+  },
+  "winner": null
+}
