@@ -329,10 +329,15 @@ export default function Contest(props) {
 export async function getServerSideProps({params}) {
     const {id} = params;
 
-    try {
-        const data = require(`../db/${id}.json`);
+    const dev = process.env.NODE_ENV !== 'production';
 
-        return {props: {...data, id}};
+    const server = dev ? 'http://localhost:3000' : 'http://onestepcloser-dev.vla.yp-c.yandex.net';
+
+    try {
+        const result = await fetch(`${server}/api/load?id=${id}`);
+        const json = await result.json();
+
+        return {props: {...json, id}};
     } catch {
         const template = require(`../assets/template.json`);
 
