@@ -331,7 +331,7 @@ export async function getServerSideProps({params}) {
 
     const dev = process.env.NODE_ENV !== 'production';
 
-    const server = dev ? 'http://localhost:3000' : 'http://onestepcloser-dev.vla.yp-c.yandex.net';
+    const server = dev ? 'http://localhost:3000' : 'http://80.79.114.148:80';
 
     try {
         const result = await fetch(`${server}/api/load?id=${id}`);
