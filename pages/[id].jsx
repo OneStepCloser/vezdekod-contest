@@ -117,7 +117,7 @@ export default function Contest(props) {
             return newContestsLocal;
         });
 
-    }, [playersLocal, contestsLocal]);
+    }, [playersLocal, contestsLocal, contestsLayers.length]);
 
     const handleSave = useCallback(() => {
         setIsSaving(true);
@@ -144,7 +144,7 @@ export default function Contest(props) {
             .catch(() => {
                 toast.success('Что-то пошло не так :(', {hideProgressBar: true});
             });
-    }, [contestsLocal, playersLocal, winnerId, setIsSaving]);
+    }, [contestsLocal, playersLocal, winnerId, setIsSaving, id]);
 
     const allSelectOptions = useMemo(() => {
         return playersLocal
